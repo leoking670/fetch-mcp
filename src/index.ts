@@ -141,6 +141,6 @@ export default {
       });
     }
 
-    return MyMCP.serve("/mcp")(request, env, ctx);
+    return MyMCP.serve("/mcp").fetch(request, env, ctx);
   },
 };
